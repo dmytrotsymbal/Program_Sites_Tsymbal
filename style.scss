@@ -1,0 +1,407 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .headerContent {
+    width: 1000px;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 300px;
+      height: 50px;
+    }
+
+    .rightSide {
+      width: 350px;
+      height: 130px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      input {
+        width: 220px;
+        height: 40px;
+      }
+
+      button {
+        width: 95px;
+        height: 40px;
+        border: 0.3px solid black;
+        background: white;
+      }
+      button:hover {
+        width: 95px;
+        height: 40px;
+        transition: 0.4s;
+        border: 0.3px solid black;
+        background: rgb(247, 84, 84);
+        color: white;
+      }
+    }
+  }
+}
+
+.blockUnderHeader {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+
+  .blockUnderHeaderContent {
+    width: 1000px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .leftSide {
+      width: 465px;
+      height: 120px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        color: red;
+        font-size: 24px;
+      }
+    }
+
+    button {
+      width: 170px;
+      height: 50px;
+      border: 0.3px solid black;
+      background: white;
+    }
+    button:hover {
+      width: 170px;
+      height: 50px;
+      transition: 0.4s;
+      border: 0.3px solid black;
+      background: rgb(247, 84, 84);
+      color: white;
+    }
+  }
+}
+
+.topTeachersBlock {
+  height: 880px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .topTeachersBlockContent {
+    height: 880px;
+    width: 1000px;
+    background-color: white;
+    position: relative;
+
+    .horizontalLine {
+      height: 1px;
+      width: 500px;
+      background-color: black;
+      margin-top: 50px;
+      margin-left: calc(50% - 500px / 2);
+    }
+
+    h2 {
+      font-size: 34px;
+      margin-top: 40px;
+      font-weight: bold;
+      width: 210px;
+      margin-left: calc(50% - 210px / 2);
+    }
+
+    .form {
+      position: absolute;
+      top: 170px;
+      width: 1000px;
+      float: left;
+      display: flex;
+      flex-direction: row;
+
+      .region,
+      .sex {
+        width: 170px;
+        border-right: 1px dashed rgb(12, 0, 0);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40px;
+      }
+
+      .age {
+        width: 130px;
+        height: 40px;
+        border-right: 1px dashed rgb(17, 0, 0);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .preLastCheckboxBlock {
+        width: 150px;
+        height: 40px;
+        border-right: 1px dashed rgb(17, 0, 0);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .lastCheckboxBlock {
+        width: 150px;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+
+    .blockOfCards {
+      position: absolute;
+      top: 270px;
+
+      .row {
+        visibility: visible;
+
+        .col {
+          margin-bottom: 50px;
+          display: flex;
+          justify-content: center;
+
+          .card {
+            width: 150px;
+            height: 290px;
+            border: 0;
+
+            img {
+              border-radius: 100%;
+              width: 150px;
+              min-height: 150px;
+              border: 2px solid #f99589;
+            }
+
+            .teacherName {
+              color: black;
+              font-size: 26px;
+              text-align: center;
+              font-weight: 600;
+              text-decoration: none;
+              line-height: 28px;
+              width: 130px;
+              margin-left: calc(50% - 130px / 2);
+            }
+
+            .subject {
+              color: #58584e;
+              font-size: 15px;
+              text-align: center;
+              margin-top: 20px;
+            }
+
+            .country {
+              color: black;
+              font-size: 10px;
+              text-align: center;
+            }
+          }
+
+          .card:hover img {
+            width: 150px;
+            height: 290px;
+            border-radius: 100%;
+            width: 150px;
+            min-height: 150px;
+            border: 2px solid rgb(247, 84, 84);
+          }
+        }
+      }
+    }
+  }
+}
+
+.statisticsBlock {
+  width: 100%;
+  min-height: 620px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .statisticsBlockContnet {
+    min-height: 620px;
+    width: 1000px;
+    background-color: white;
+
+    .horizontalLine {
+      height: 1px;
+      width: 500px;
+      background-color: black;
+      margin-top: 50px;
+      margin-left: calc(50% - 500px / 2);
+    }
+
+    h2 {
+      font-size: 34px;
+      margin-top: 40px;
+      font-weight: bold;
+      width: 140px;
+      margin-left: calc(50% - 140px / 2);
+    }
+
+    table {
+      margin-top: 40px;
+      width: 1000px;
+    }
+
+    table,
+    th,
+    td {
+      height: 35px;
+    }
+
+    #dksfnjsdnfj {
+      background-color: #f9f5f9;
+    }
+
+    #rnwjernejr {
+      border-bottom: 2px solid black;
+    }
+  }
+}
+
+.carouselBlock {
+  width: 100%;
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .carouselBlockContent {
+    width: 1200px;
+    height: 470px;
+
+    .horizontalLine {
+      height: 1px;
+      width: 500px;
+      background-color: black;
+      margin-top: 50px;
+      margin-left: calc(50% - 500px / 2);
+    }
+
+    h2 {
+      font-size: 34px;
+      margin-top: 40px;
+      font-weight: bold;
+      width: 142px;
+      margin-left: calc(50% - 142px / 2);
+    }
+
+    .carousel {
+      margin-top: 40px;
+      width: 1200px;
+
+      .carousel-item {
+        width: 950px;
+        margin-left: calc(50% - 950px / 2);
+
+        .row {
+          visibility: visible;
+
+          .card {
+            width: 150px;
+            height: 290px;
+            border: 0;
+
+            img {
+              border-radius: 100%;
+              width: 150px;
+              min-height: 150px;
+              border: 2px solid #f99589;
+            }
+
+            .teacherName {
+              color: black;
+              font-size: 26px;
+              text-align: center;
+              font-weight: 600;
+              text-decoration: none;
+              line-height: 28px;
+              width: 130px;
+              margin-left: calc(50% - 130px / 2);
+            }
+
+            .subject {
+              color: #58584e;
+              font-size: 15px;
+              text-align: center;
+              margin-top: 20px;
+            }
+
+            .country {
+              color: black;
+              font-size: 10px;
+              text-align: center;
+            }
+          }
+          .card:hover img {
+            width: 150px;
+            height: 290px;
+            border-radius: 100%;
+            width: 150px;
+            min-height: 150px;
+            border: 2px solid rgb(247, 84, 84);
+          }
+        }
+
+        .carousel-control-prev {
+          background-color: #0e0e0d;
+          color: black;
+
+          span.carousel-control-prev-icon {
+            background-color: #0e0e0d;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.blockUnderCarousel {
+  width: 100%;
+  min-height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .blockUnderCarouselContent {
+    width: 1000px;
+    min-height: 290px;
+
+    .horizontalLine {
+      height: 1px;
+      width: 500px;
+      background-color: black;
+      margin-top: 50px;
+      margin-left: calc(50% - 500px / 2);
+      margin-bottom: 40px;
+    }
+  }
+}

@@ -1,0 +1,358 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .headerContent {
+  width: 1000px;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerContent img {
+  width: 300px;
+  height: 50px;
+}
+header .headerContent .rightSide {
+  width: 350px;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerContent .rightSide input {
+  width: 220px;
+  height: 40px;
+}
+header .headerContent .rightSide button {
+  width: 95px;
+  height: 40px;
+  border: 0.3px solid black;
+  background: white;
+}
+header .headerContent .rightSide button:hover {
+  width: 95px;
+  height: 40px;
+  transition: 0.4s;
+  border: 0.3px solid black;
+  background: rgb(247, 84, 84);
+  color: white;
+}
+
+.blockUnderHeader {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.blockUnderHeader .blockUnderHeaderContent {
+  width: 1000px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blockUnderHeader .blockUnderHeaderContent .leftSide {
+  width: 465px;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.blockUnderHeader .blockUnderHeaderContent .leftSide a {
+  text-decoration: none;
+  color: red;
+  font-size: 24px;
+}
+.blockUnderHeader .blockUnderHeaderContent button {
+  width: 170px;
+  height: 50px;
+  border: 0.3px solid black;
+  background: white;
+}
+.blockUnderHeader .blockUnderHeaderContent button:hover {
+  width: 170px;
+  height: 50px;
+  transition: 0.4s;
+  border: 0.3px solid black;
+  background: rgb(247, 84, 84);
+  color: white;
+}
+
+.topTeachersBlock {
+  height: 880px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topTeachersBlock .topTeachersBlockContent {
+  height: 880px;
+  width: 1000px;
+  background-color: white;
+  position: relative;
+}
+.topTeachersBlock .topTeachersBlockContent .horizontalLine {
+  height: 1px;
+  width: 500px;
+  background-color: black;
+  margin-top: 50px;
+  margin-left: calc(50% - 250px);
+}
+.topTeachersBlock .topTeachersBlockContent h2 {
+  font-size: 34px;
+  margin-top: 40px;
+  font-weight: bold;
+  width: 210px;
+  margin-left: calc(50% - 105px);
+}
+.topTeachersBlock .topTeachersBlockContent .form {
+  position: absolute;
+  top: 170px;
+  width: 1000px;
+  float: left;
+  display: flex;
+  flex-direction: row;
+}
+.topTeachersBlock .topTeachersBlockContent .form .region,
+.topTeachersBlock .topTeachersBlockContent .form .sex {
+  width: 170px;
+  border-right: 1px dashed rgb(12, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+}
+.topTeachersBlock .topTeachersBlockContent .form .age {
+  width: 130px;
+  height: 40px;
+  border-right: 1px dashed rgb(17, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.topTeachersBlock .topTeachersBlockContent .form .preLastCheckboxBlock {
+  width: 150px;
+  height: 40px;
+  border-right: 1px dashed rgb(17, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.topTeachersBlock .topTeachersBlockContent .form .lastCheckboxBlock {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.topTeachersBlock .topTeachersBlockContent .blockOfCards {
+  position: absolute;
+  top: 270px;
+}
+.topTeachersBlock .topTeachersBlockContent .blockOfCards .row {
+  visibility: visible;
+}
+.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .col {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .col .card {
+  width: 150px;
+  height: 290px;
+  border: 0;
+}
+.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .col .card img {
+  border-radius: 100%;
+  width: 150px;
+  min-height: 150px;
+  border: 2px solid #f99589;
+}
+.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .col .card .teacherName {
+  color: black;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 28px;
+  width: 130px;
+  margin-left: calc(50% - 65px);
+}
+.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .col .card .subject {
+  color: #58584e;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .col .card .country {
+  color: black;
+  font-size: 10px;
+  text-align: center;
+}
+.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .col .card:hover img {
+  width: 150px;
+  height: 290px;
+  border-radius: 100%;
+  width: 150px;
+  min-height: 150px;
+  border: 2px solid rgb(247, 84, 84);
+}
+
+.statisticsBlock {
+  width: 100%;
+  min-height: 620px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.statisticsBlock .statisticsBlockContnet {
+  min-height: 620px;
+  width: 1000px;
+  background-color: white;
+}
+.statisticsBlock .statisticsBlockContnet .horizontalLine {
+  height: 1px;
+  width: 500px;
+  background-color: black;
+  margin-top: 50px;
+  margin-left: calc(50% - 250px);
+}
+.statisticsBlock .statisticsBlockContnet h2 {
+  font-size: 34px;
+  margin-top: 40px;
+  font-weight: bold;
+  width: 140px;
+  margin-left: calc(50% - 70px);
+}
+.statisticsBlock .statisticsBlockContnet table {
+  margin-top: 40px;
+  width: 1000px;
+}
+.statisticsBlock .statisticsBlockContnet table,
+.statisticsBlock .statisticsBlockContnet th,
+.statisticsBlock .statisticsBlockContnet td {
+  height: 35px;
+}
+.statisticsBlock .statisticsBlockContnet #dksfnjsdnfj {
+  background-color: #f9f5f9;
+}
+.statisticsBlock .statisticsBlockContnet #rnwjernejr {
+  border-bottom: 2px solid black;
+}
+
+.carouselBlock {
+  width: 100%;
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carouselBlock .carouselBlockContent {
+  width: 1200px;
+  height: 470px;
+}
+.carouselBlock .carouselBlockContent .horizontalLine {
+  height: 1px;
+  width: 500px;
+  background-color: black;
+  margin-top: 50px;
+  margin-left: calc(50% - 250px);
+}
+.carouselBlock .carouselBlockContent h2 {
+  font-size: 34px;
+  margin-top: 40px;
+  font-weight: bold;
+  width: 142px;
+  margin-left: calc(50% - 71px);
+}
+.carouselBlock .carouselBlockContent .carousel {
+  margin-top: 40px;
+  width: 1200px;
+}
+.carouselBlock .carouselBlockContent .carousel .carousel-item {
+  width: 950px;
+  margin-left: calc(50% - 475px);
+}
+.carouselBlock .carouselBlockContent .carousel .carousel-item .row {
+  visibility: visible;
+}
+.carouselBlock .carouselBlockContent .carousel .carousel-item .row .card {
+  width: 150px;
+  height: 290px;
+  border: 0;
+}
+.carouselBlock .carouselBlockContent .carousel .carousel-item .row .card img {
+  border-radius: 100%;
+  width: 150px;
+  min-height: 150px;
+  border: 2px solid #f99589;
+}
+.carouselBlock .carouselBlockContent .carousel .carousel-item .row .card .teacherName {
+  color: black;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 28px;
+  width: 130px;
+  margin-left: calc(50% - 65px);
+}
+.carouselBlock .carouselBlockContent .carousel .carousel-item .row .card .subject {
+  color: #58584e;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+.carouselBlock .carouselBlockContent .carousel .carousel-item .row .card .country {
+  color: black;
+  font-size: 10px;
+  text-align: center;
+}
+.carouselBlock .carouselBlockContent .carousel .carousel-item .row .card:hover img {
+  width: 150px;
+  height: 290px;
+  border-radius: 100%;
+  width: 150px;
+  min-height: 150px;
+  border: 2px solid rgb(247, 84, 84);
+}
+.carouselBlock .carouselBlockContent .carousel .carousel-item .carousel-control-prev {
+  background-color: #0e0e0d;
+  color: black;
+}
+.carouselBlock .carouselBlockContent .carousel .carousel-item .carousel-control-prev span.carousel-control-prev-icon {
+  background-color: #0e0e0d;
+  color: black;
+}
+
+.blockUnderCarousel {
+  width: 100%;
+  min-height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blockUnderCarousel .blockUnderCarouselContent {
+  width: 1000px;
+  min-height: 290px;
+}
+.blockUnderCarousel .blockUnderCarouselContent .horizontalLine {
+  height: 1px;
+  width: 500px;
+  background-color: black;
+  margin-top: 50px;
+  margin-left: calc(50% - 250px);
+  margin-bottom: 40px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="headerContent">
+        <div class="leftSide">
+          <img src="./images/headerLogo.jpg" alt="headerLogo" />
+        </div>
+        <div class="rightSide">
+          <input type="text" placeholder="Name, note or age to search" />
+          <button>Search</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="blockUnderHeader">
+        <div class="blockUnderHeaderContent">
+          <div class="leftSide">
+            <a href="#">Teacher</a>
+            <a href="#">Statistics</a>
+            <a href="#">Favorites</a>
+            <a href="#">About</a>
+          </div>
+
+          <button>Add Teacher</button>
+        </div>
+      </div>
+
+      <div class="topTeachersBlock">
+        <div class="topTeachersBlockContent">
+          <div class="horizontalLine"></div>
+          <h2>Top Teachers</h2>
+
+          <form class="form">
+            <div class="age">
+              Age
+              <select id="selector">
+                <option value="ageYoung">21-31</option>
+                <option value="ageOld">32-60</option>
+              </select>
+            </div>
+
+            <div class="region">
+              Region
+              <select id="selector">
+                <option value="Europe">Europe</option>
+                <option value="Asia">Asia</option>
+              </select>
+            </div>
+
+            <div class="sex">
+              Sex
+              <select name="" id="selector">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+
+            <div class="preLastCheckboxBlock">
+              <input id="preLastCheckboxBlock" type="checkbox" />Only with photo
+            </div>
+
+            <div class="lastCheckboxBlock">
+              <input id="lastCheckbox" type="checkbox" />Only favorites
+            </div>
+          </form>
+
+          <div class="blockOfCards">
+            <div class="row row-cols-lg-5">
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
+                    alt=""
+                  />
+                  <a class="teacherName" href="#">Ihor Tkachuk</a>
+
+                  <p class="subject">Chemistry</p>
+
+                  <p class="country">Ukraine</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/27/08/jennifer-lawrence.jpg"
+                    alt=""
+                  />
+                  <a class="teacherName" href="#">Pregg Rameshba</a>
+
+                  <p class="subject">Chess</p>
+
+                  <p class="country">India</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://i.pinimg.com/564x/4c/e5/c5/4ce5c5c43a30adbc3730322934a10dbd.jpg"
+                    alt=""
+                  />
+                  <a class="teacherName" href="#">Floor Jansen</a>
+
+                  <p class="subject">Vocal</p>
+
+                  <p class="country">Denmark</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
+                    alt=""
+                  />
+                  <a class="teacherName" href="#">Ihor Tkachuk</a>
+
+                  <p class="subject">Chemistry</p>
+
+                  <p class="country">Ukraine</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
+                    alt=""
+                  />
+                  <a class="teacherName" href="#">Ihor Tkachuk</a>
+
+                  <p class="subject">Chemistry</p>
+
+                  <p class="country">Ukraine</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
+                    alt=""
+                  />
+                  <a class="teacherName" href="#">Ihor Tkachuk</a>
+
+                  <p class="subject">Chemistry</p>
+
+                  <p class="country">Ukraine</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
+                    alt=""
+                  />
+                  <a class="teacherName" href="#">Ihor Tkachuk</a>
+
+                  <p class="subject">Chemistry</p>
+
+                  <p class="country">Ukraine</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="statisticsBlock">
+        <div class="statisticsBlockContnet">
+          <div class="horizontalLine"></div>
+          <h2>Statistics</h2>
+
+          <table>
+            <tr id="rnwjernejr">
+              <th>Name</th>
+              <th>Speciality</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Nationality</th>
+            </tr>
+            <tr>
+              <td>Deisy Alexander</td>
+              <td>Chemist</td>
+              <td>28</td>
+              <td>Female</td>
+              <td>Vietnam</td>
+            </tr>
+            <tr id="dksfnjsdnfj">
+              <td>Julia Alexander</td>
+              <td>Math</td>
+              <td>26</td>
+              <td>Female</td>
+              <td>USA</td>
+            </tr>
+            <tr>
+              <td>Rita Hart</td>
+              <td>Art</td>
+              <td>41</td>
+              <td>Female</td>
+              <td>Ireland</td>
+            </tr>
+            <tr id="dksfnjsdnfj">
+              <td>Jonathan Jacobs</td>
+              <td>Math</td>
+              <td>32</td>
+              <td>Male</td>
+              <td>UK</td>
+            </tr>
+            <tr>
+              <td>Nathaniel White</td>
+              <td>Computer Scince</td>
+              <td>37</td>
+              <td>Male</td>
+              <td>Austria</td>
+            </tr>
+            <tr id="dksfnjsdnfj">
+              <td>Frank Medina</td>
+              <td>English</td>
+              <td>43</td>
+              <td>Male</td>
+              <td>Italy</td>
+            </tr>
+            <tr>
+              <td>Rita Hart</td>
+              <td>Art</td>
+              <td>41</td>
+              <td>Female</td>
+              <td>Ireland</td>
+            </tr>
+            <tr id="dksfnjsdnfj">
+              <td>Jonathan Jacobs</td>
+              <td>Math</td>
+              <td>32</td>
+              <td>Male</td>
+              <td>UK</td>
+            </tr>
+            <tr>
+              <td>Nathaniel White</td>
+              <td>Computer Scince</td>
+              <td>37</td>
+              <td>Male</td>
+              <td>Austria</td>
+            </tr>
+            <tr id="dksfnjsdnfj">
+              <td>Frank Medina</td>
+              <td>English</td>
+              <td>43</td>
+              <td>Male</td>
+              <td>Italy</td>
+            </tr>
+            <tr>
+              <td>Rita Hart</td>
+              <td>Art</td>
+              <td>41</td>
+              <td>Female</td>
+              <td>Ireland</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="carouselBlock">
+        <div class="carouselBlockContent">
+          <div class="horizontalLine"></div>
+          <h2>Favorites</h2>
+
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="row row-cols-lg-5">
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
+                        alt=""
+                      />
+                      <a class="teacherName" href="#">Ihor Tkachuk</a>
+
+                      <p class="subject">Chemistry</p>
+
+                      <p class="country">Ukraine</p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/27/08/jennifer-lawrence.jpg"
+                        alt=""
+                      />
+                      <a class="teacherName" href="#">Pregg Rameshba</a>
+
+                      <p class="subject">Chess</p>
+
+                      <p class="country">India</p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://i.pinimg.com/564x/4c/e5/c5/4ce5c5c43a30adbc3730322934a10dbd.jpg"
+                        alt=""
+                      />
+                      <a class="teacherName" href="#">Floor Jansen</a>
+
+                      <p class="subject">Vocal</p>
+
+                      <p class="country">Denmark</p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
+                        alt=""
+                      />
+                      <a class="teacherName" href="#">Ihor Tkachuk</a>
+
+                      <p class="subject">Chemistry</p>
+
+                      <p class="country">Ukraine</p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
+                        alt=""
+                      />
+                      <a class="teacherName" href="#">Ihor Tkachuk</a>
+
+                      <p class="subject">Chemistry</p>
+
+                      <p class="country">Ukraine</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="row row-cols-lg-5">
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
+                        alt=""
+                      />
+                      <a class="teacherName" href="#">Ihor Tkachuk</a>
+
+                      <p class="subject">Chemistry</p>
+
+                      <p class="country">Ukraine</p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/27/08/jennifer-lawrence.jpg"
+                        alt=""
+                      />
+                      <a class="teacherName" href="#">Pregg Rameshba</a>
+
+                      <p class="subject">Chess</p>
+
+                      <p class="country">India</p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://i.pinimg.com/564x/4c/e5/c5/4ce5c5c43a30adbc3730322934a10dbd.jpg"
+                        alt=""
+                      />
+                      <a class="teacherName" href="#">Floor Jansen</a>
+
+                      <p class="subject">Vocal</p>
+
+                      <p class="country">Denmark</p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
+                        alt=""
+                      />
+                      <a class="teacherName" href="#">Ihor Tkachuk</a>
+
+                      <p class="subject">Chemistry</p>
+
+                      <p class="country">Ukraine</p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
+                        alt=""
+                      />
+                      <a class="teacherName" href="#">Ihor Tkachuk</a>
+
+                      <p class="subject">Chemistry</p>
+
+                      <p class="country">Ukraine</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="blockUnderCarousel">
+        <div class="blockUnderCarouselContent">
+          <div class="horizontalLine"></div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            voluptatem possimus labore! Maxime optio omnis sint magnam esse.
+            Facilis debitis molestiae ducimus delectus voluptatum explicabo
+            ullam fugiat incidunt eligendi magnam? Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Minima voluptatem possimus labore!
+            Maxime optio omnis sint magnam esse. Facilis debitis molestiae
+            ducimus delectus voluptatum explicabo ullam fugiat incidunt eligendi
+            magnam?
+          </p>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus,
+            culpa omnis id dignissimos cumque nisi aliquam voluptas eos dolores
+            libero repellat? Minima, quasi illo! Laudantium, eum iure. Illum,
+            optio voluptas!
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus,
+            culpa omnis id dignissimos cumque nisi aliquam voluptas eos dolores
+            libero repellat? Minima, quasi illo! Laudantium, eum iure. Illum,
+            optio voluptas!
+          </p>
+
+          <div class="blockUnderHeader">
+            <div class="blockUnderHeaderContent">
+              <div class="leftSide">
+                <a href="#">Teacher</a>
+                <a href="#">Statistics</a>
+                <a href="#">Favorites</a>
+                <a href="#">About</a>
+              </div>
+
+              <button>Add Teacher</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
