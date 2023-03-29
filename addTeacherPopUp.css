@@ -1,0 +1,90 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.popUpBack {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.popUpBack .addTeacherPopUp {
+  width: 400px;
+  height: 550px;
+  background: white;
+  border: 1px solid black;
+  margin: 100px auto;
+}
+.popUpBack .addTeacherPopUp .form {
+  width: 400px;
+  height: 550px;
+}
+.popUpBack .addTeacherPopUp .form .headerOfModal {
+  width: 400px;
+  height: 50px;
+  background-color: rgb(70, 70, 72);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popUpBack .addTeacherPopUp .form .headerOfModal h4 {
+  color: white;
+}
+.popUpBack .addTeacherPopUp .form .headerOfModal .closePopUpBtn {
+  background-color: rgb(70, 70, 72);
+  color: white;
+  border: 0px;
+}
+.popUpBack .addTeacherPopUp .form .name,
+.popUpBack .addTeacherPopUp .form .Speciality {
+  width: 380px;
+  margin-left: calc(50% - 190px);
+  margin-top: 20px;
+}
+.popUpBack .addTeacherPopUp .form .place,
+.popUpBack .addTeacherPopUp .form .contacts {
+  width: 380px;
+  margin-left: calc(50% - 190px);
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.popUpBack .addTeacherPopUp .form #dateInput,
+.popUpBack .addTeacherPopUp .form select,
+.popUpBack .addTeacherPopUp .form .color {
+  width: 190px;
+  margin-left: calc(50% - 190px);
+  margin-top: 20px;
+}
+.popUpBack .addTeacherPopUp .form textarea {
+  width: 380px;
+  margin-left: calc(50% - 190px);
+  margin-top: 20px;
+}
+.popUpBack .addTeacherPopUp .form .addForm {
+  width: 380px;
+  margin-left: calc(50% - 190px);
+  margin-top: 20px;
+  border: 1px solid black;
+  color: red;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=addTeacherPopUp.css.map */

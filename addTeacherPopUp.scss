@@ -1,0 +1,101 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.popUpBack {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  display: none;
+
+  .addTeacherPopUp {
+    width: 400px;
+    height: 550px;
+    background: white;
+    border: 1px solid black;
+    margin: 100px auto;
+
+    .form {
+      width: 400px;
+      height: 550px;
+
+      .headerOfModal {
+        width: 400px;
+        height: 50px;
+        background-color: rgb(70, 70, 72);
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h4 {
+          color: white;
+        }
+
+        .closePopUpBtn {
+          background-color: rgb(70, 70, 72);
+          color: white;
+          border: 0px;
+        }
+      }
+
+      .name,
+      .Speciality {
+        width: 380px;
+        margin-left: calc(50% - 380px / 2);
+        margin-top: 20px;
+      }
+
+      .place,
+      .contacts {
+        width: 380px;
+        margin-left: calc(50% - 380px / 2);
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #dateInput,
+      select,
+      .color {
+        width: 190px;
+        margin-left: calc(50% - 380px / 2);
+        margin-top: 20px;
+      }
+
+      textarea {
+        width: 380px;
+        margin-left: calc(50% - 380px / 2);
+        margin-top: 20px;
+      }
+
+      .addForm {
+        width: 380px;
+        margin-left: calc(50% - 380px / 2);
+        margin-top: 20px;
+        border: 1px solid black;
+        color: red;
+      }
+    }
+  }
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

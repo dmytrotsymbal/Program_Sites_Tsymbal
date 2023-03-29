@@ -51,6 +51,45 @@ header {
   }
 }
 
+// __________________________________________headerADAPTIVE_____________________________________
+@media (max-width: 1000px) {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .headerContent {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        width: 140px;
+      }
+
+      .rightSide {
+        width: 240px;
+        height: 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        input {
+          width: 140px;
+          height: 40px;
+        }
+        button {
+          width: 65px;
+          height: 40px;
+          border: 0.3px solid black;
+          background: white;
+        }
+      }
+    }
+  }
+}
 .blockUnderHeader {
   width: 100%;
   height: 120px;
@@ -98,8 +137,35 @@ header {
   }
 }
 
+// __________________________________________headerADAPTIVE_____________________________________
+@media (max-width: 1000px) {
+  .blockUnderHeader {
+    width: 100%;
+
+    .blockUnderHeaderContent {
+      width: 100%;
+
+      .leftSide {
+        width: 465px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        padding-left: 20px;
+
+        a {
+          text-decoration: none;
+          color: red;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
 .topTeachersBlock {
-  height: 880px;
+  min-height: 880px;
   width: 100%;
   background-color: white;
   display: flex;
@@ -107,10 +173,9 @@ header {
   align-items: center;
 
   .topTeachersBlockContent {
-    height: 880px;
+    min-height: 880px;
     width: 1000px;
     background-color: white;
-    position: relative;
 
     .horizontalLine {
       height: 1px;
@@ -129,8 +194,7 @@ header {
     }
 
     .form {
-      position: absolute;
-      top: 170px;
+      margin-top: 50px;
       width: 1000px;
       float: left;
       display: flex;
@@ -174,8 +238,8 @@ header {
     }
 
     .blockOfCards {
-      position: absolute;
-      top: 270px;
+      margin-top: 150px;
+      min-height: 400px;
 
       .row {
         visibility: visible;
@@ -236,6 +300,44 @@ header {
   }
 }
 
+// __________________________________________topTeachersBlockADAPTIVE_____________________________________
+@media (max-width: 1000px) {
+  .topTeachersBlock {
+    width: 100%;
+
+    .topTeachersBlockContent {
+      width: 100%;
+
+      .horizontalLine {
+        width: 380px;
+        margin-left: calc(50% - 380px / 2);
+      }
+
+      h2 {
+        font-size: 30px;
+        margin-top: 40px;
+        font-weight: bold;
+        width: 185px;
+        margin-left: calc(50% - 185px / 2);
+      }
+
+      .form {
+        width: 380px;
+        margin-left: calc(50% - 380px / 2);
+
+        .preLastCheckboxBlock,
+        .lastCheckboxBlock {
+          display: none;
+        }
+      }
+
+      .blockOfCards {
+        width: 100%;
+      }
+    }
+  }
+}
+
 .statisticsBlock {
   width: 100%;
   min-height: 620px;
@@ -282,6 +384,34 @@ header {
 
     #rnwjernejr {
       border-bottom: 2px solid black;
+    }
+  }
+}
+// __________________________________________statisticsBlockADAPTIVE_____________________________________
+@media (max-width: 1000px) {
+  .statisticsBlock {
+    width: 100%;
+
+    .statisticsBlockContnet {
+      width: 100%;
+
+      .horizontalLine {
+        width: 380px;
+        margin-left: calc(50% - 380px / 2);
+      }
+
+      h2 {
+        font-size: 34px;
+        margin-top: 40px;
+        font-weight: bold;
+        width: 140px;
+        margin-left: calc(50% - 140px / 2);
+      }
+
+      table {
+        margin-top: 40px;
+        width: 100%;
+      }
     }
   }
 }
@@ -384,6 +514,80 @@ header {
   }
 }
 
+// __________________________________________carouselBlockADAPTIVE_____________________________________
+@media (max-width: 1000px) {
+  .carouselBlock {
+    width: 100%;
+    display: none;
+
+    .carouselBlockContent {
+      width: 100%;
+
+      .horizontalLine {
+        width: 380px;
+        margin-left: calc(50% - 380px / 2);
+      }
+
+      h2 {
+        font-size: 30px;
+        margin-top: 40px;
+        font-weight: bold;
+        width: 185px;
+        margin-left: calc(50% - 185px / 2);
+      }
+
+      .carousel {
+        width: 380px;
+
+        .carousel-item {
+          width: 380px;
+          margin-left: calc(50% - 380px / 2);
+
+          .row {
+            visibility: visible;
+
+            .card {
+              width: 70px;
+              height: 100px;
+              border: 0;
+
+              img {
+                border-radius: 100%;
+                width: 70px;
+                min-height: 100px;
+                border: 2px solid #f99589;
+              }
+
+              .teacherName {
+                color: black;
+                font-size: 16px;
+                text-align: center;
+                font-weight: 600;
+                text-decoration: none;
+                line-height: 28px;
+                margin: auto;
+              }
+
+              .subject {
+                color: #58584e;
+                font-size: 15px;
+                text-align: center;
+                margin-top: 20px;
+              }
+
+              .country {
+                color: black;
+                font-size: 10px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .blockUnderCarousel {
   width: 100%;
   min-height: 290px;
@@ -402,6 +606,27 @@ header {
       margin-top: 50px;
       margin-left: calc(50% - 500px / 2);
       margin-bottom: 40px;
+    }
+  }
+}
+
+// __________________________________________blockUnderCarouselADAPTIVE_____________________________________
+@media (max-width: 1000px) {
+  .blockUnderCarousel {
+    width: 100%;
+    min-height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .blockUnderCarouselContent {
+      width: 100%;
+      min-height: 290px;
+
+      .horizontalLine {
+        width: 380px;
+        margin-left: calc(50% - 380px / 2);
+      }
     }
   }
 }

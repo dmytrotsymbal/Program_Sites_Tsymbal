@@ -24,6 +24,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="addTeacherPopUp.css" />
+    <link rel="stylesheet" href="teacherInfoPopUp.css" />
   </head>
   <body>
     <header>
@@ -48,7 +50,7 @@
             <a href="#">About</a>
           </div>
 
-          <button>Add Teacher</button>
+          <button class="addTeacher">Add Teacher</button>
         </div>
       </div>
 
@@ -494,11 +496,81 @@
                 <a href="#">About</a>
               </div>
 
-              <button>Add Teacher</button>
+              <button class="addTeacher">Add Teacher</button>
             </div>
           </div>
         </div>
       </div>
     </main>
+
+    <footer>bebe</footer>
+
+    <div class="popUpBack">
+      <div class="addTeacherPopUp">
+        <form action="" class="form">
+          <div class="headerOfModal">
+            <h4>Add theacher</h4>
+            <button class="closePopUpBtn">X</button>
+          </div>
+          <input class="name" type="text" placeholder="Name" />
+          <input class="Speciality" type="text" placeholder="Speciality" />
+
+          <div class="place">
+            <input type="text" placeholder="Country" />
+            <input type="text" placeholder="City" />
+          </div>
+
+          <div class="contacts">
+            <input type="email" placeholder="Email" />
+            <input type="tel" placeholder="Phone" />
+          </div>
+
+          <input type="date" name="" id="dateInput" />
+
+          <select name="" id="selector">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+
+          <input class="color" type="color" placeholder="Color" />
+
+          <textarea></textarea>
+          <button class="addForm">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="teacherInfoBack">
+      <div class="teacherInfoPopUp">
+        <div class="headerOfModal">
+          <h4>Teacher Info</h4>
+          <button class="closePopUpTeacherInfoBtn">X</button>
+        </div>
+        <img
+          class="imgInCard"
+          src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
+          alt=""
+        />
+        <h5 class="teacherNameCard">Ihor Tkachuk</h5>
+
+        <p class="subjectCard">Chemistry</p>
+
+        <p class="countryCard">Ukraine</p>
+
+        <p class="ageAndSexCard">35, Male</p>
+
+        <a class="mailCard" href="#">ihor_tkachuk@domain.com</a>
+
+        <p class="telephoneCard">35252412334</p>
+
+        <p class="paragraphCard">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, odio.
+          Beatae, alias. Asperiores officiis ex odio non consequuntur suscipit,
+          id nulla veritatis temporibus ipsa corrupti. Doloremque nostrum
+          voluptatum pariatur? Est!
+        </p>
+      </div>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
