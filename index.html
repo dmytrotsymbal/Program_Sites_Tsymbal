@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,20 +14,29 @@
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
-
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="addTeacherPopUp.css" />
-    <link rel="stylesheet" href="teacherInfoPopUp.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="AddPopUp/addTeacherPopUp.css" />
+    <link rel="stylesheet" href="InfoPopUp/infoPopUp.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   </head>
   <body>
     <header>
@@ -34,8 +45,12 @@
           <img src="./images/headerLogo.jpg" alt="headerLogo" />
         </div>
         <div class="rightSide">
-          <input type="text" placeholder="Name, note or age to search" />
-          <button>Search</button>
+          <input
+            id="inputFinder"
+            type="text"
+            placeholder="Name, note or age to search"
+          />
+          <button id="searchBtn">Search</button>
         </div>
       </div>
     </header>
@@ -61,27 +76,78 @@
 
           <form class="form">
             <div class="age">
-              Age
-              <select id="selector">
-                <option value="ageYoung">21-31</option>
-                <option value="ageOld">32-60</option>
-              </select>
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="ageSelector"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Age
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <input id="youngestSort" type="button" value="Youngest" />
+                  </li>
+                  <li>
+                    <input id="middleSort" type="button" value="31-51" />
+                  </li>
+                  <li>
+                    <input id="oldestSort" type="button" value="Oldest" />
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div class="region">
-              Region
-              <select id="selector">
-                <option value="Europe">Europe</option>
-                <option value="Asia">Asia</option>
-              </select>
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="regionSelector"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Region
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <input id="europeSort" type="button" value="Europe" />
+                  </li>
+                  <li>
+                    <input id="africaSort" type="button" value="Africa" />
+                  </li>
+                  <li>
+                    <input id="americaSort" type="button" value="America" />
+                  </li>
+                  <li>
+                    <input id="asiaSort" type="button" value="Asia" />
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div class="sex">
-              Sex
-              <select name="" id="selector">
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-              </select>
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="sexSelector"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sex
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <input id="maleSort" type="button" value="Male" />
+                  </li>
+                  <li>
+                    <input id="femaleSort" type="button" value="Female" />
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div class="preLastCheckboxBlock">
@@ -94,99 +160,7 @@
           </form>
 
           <div class="blockOfCards">
-            <div class="row row-cols-lg-5">
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
-                    alt=""
-                  />
-                  <a class="teacherName" href="#">Ihor Tkachuk</a>
-
-                  <p class="subject">Chemistry</p>
-
-                  <p class="country">Ukraine</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/27/08/jennifer-lawrence.jpg"
-                    alt=""
-                  />
-                  <a class="teacherName" href="#">Pregg Rameshba</a>
-
-                  <p class="subject">Chess</p>
-
-                  <p class="country">India</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="https://i.pinimg.com/564x/4c/e5/c5/4ce5c5c43a30adbc3730322934a10dbd.jpg"
-                    alt=""
-                  />
-                  <a class="teacherName" href="#">Floor Jansen</a>
-
-                  <p class="subject">Vocal</p>
-
-                  <p class="country">Denmark</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
-                    alt=""
-                  />
-                  <a class="teacherName" href="#">Ihor Tkachuk</a>
-
-                  <p class="subject">Chemistry</p>
-
-                  <p class="country">Ukraine</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
-                    alt=""
-                  />
-                  <a class="teacherName" href="#">Ihor Tkachuk</a>
-
-                  <p class="subject">Chemistry</p>
-
-                  <p class="country">Ukraine</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
-                    alt=""
-                  />
-                  <a class="teacherName" href="#">Ihor Tkachuk</a>
-
-                  <p class="subject">Chemistry</p>
-
-                  <p class="country">Ukraine</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
-                    alt=""
-                  />
-                  <a class="teacherName" href="#">Ihor Tkachuk</a>
-
-                  <p class="subject">Chemistry</p>
-
-                  <p class="country">Ukraine</p>
-                </div>
-              </div>
-            </div>
+            <div class="row row-cols-lg-5" id="dynamicRow"></div>
           </div>
         </div>
       </div>
@@ -196,265 +170,17 @@
           <div class="horizontalLine"></div>
           <h2>Statistics</h2>
 
-          <table>
-            <tr id="rnwjernejr">
-              <th>Name</th>
-              <th>Speciality</th>
-              <th>Age</th>
-              <th>Gender</th>
-              <th>Nationality</th>
-            </tr>
-            <tr>
-              <td>Deisy Alexander</td>
-              <td>Chemist</td>
-              <td>28</td>
-              <td>Female</td>
-              <td>Vietnam</td>
-            </tr>
-            <tr id="dksfnjsdnfj">
-              <td>Julia Alexander</td>
-              <td>Math</td>
-              <td>26</td>
-              <td>Female</td>
-              <td>USA</td>
-            </tr>
-            <tr>
-              <td>Rita Hart</td>
-              <td>Art</td>
-              <td>41</td>
-              <td>Female</td>
-              <td>Ireland</td>
-            </tr>
-            <tr id="dksfnjsdnfj">
-              <td>Jonathan Jacobs</td>
-              <td>Math</td>
-              <td>32</td>
-              <td>Male</td>
-              <td>UK</td>
-            </tr>
-            <tr>
-              <td>Nathaniel White</td>
-              <td>Computer Scince</td>
-              <td>37</td>
-              <td>Male</td>
-              <td>Austria</td>
-            </tr>
-            <tr id="dksfnjsdnfj">
-              <td>Frank Medina</td>
-              <td>English</td>
-              <td>43</td>
-              <td>Male</td>
-              <td>Italy</td>
-            </tr>
-            <tr>
-              <td>Rita Hart</td>
-              <td>Art</td>
-              <td>41</td>
-              <td>Female</td>
-              <td>Ireland</td>
-            </tr>
-            <tr id="dksfnjsdnfj">
-              <td>Jonathan Jacobs</td>
-              <td>Math</td>
-              <td>32</td>
-              <td>Male</td>
-              <td>UK</td>
-            </tr>
-            <tr>
-              <td>Nathaniel White</td>
-              <td>Computer Scince</td>
-              <td>37</td>
-              <td>Male</td>
-              <td>Austria</td>
-            </tr>
-            <tr id="dksfnjsdnfj">
-              <td>Frank Medina</td>
-              <td>English</td>
-              <td>43</td>
-              <td>Male</td>
-              <td>Italy</td>
-            </tr>
-            <tr>
-              <td>Rita Hart</td>
-              <td>Art</td>
-              <td>41</td>
-              <td>Female</td>
-              <td>Ireland</td>
-            </tr>
-          </table>
+          <table id="tableOfStats"></table>
         </div>
       </div>
 
-      <div class="carouselBlock">
-        <div class="carouselBlockContent">
+      <div class="sliderBlock">
+        <div class="sliderBlockContainer">
           <div class="horizontalLine"></div>
           <h2>Favorites</h2>
 
-          <div id="carouselExampleDark" class="carousel carousel-dark slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <div class="row row-cols-lg-5">
-                  <div class="col">
-                    <div class="card">
-                      <img
-                        src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
-                        alt=""
-                      />
-                      <a class="teacherName" href="#">Ihor Tkachuk</a>
-
-                      <p class="subject">Chemistry</p>
-
-                      <p class="country">Ukraine</p>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <img
-                        src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/27/08/jennifer-lawrence.jpg"
-                        alt=""
-                      />
-                      <a class="teacherName" href="#">Pregg Rameshba</a>
-
-                      <p class="subject">Chess</p>
-
-                      <p class="country">India</p>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <img
-                        src="https://i.pinimg.com/564x/4c/e5/c5/4ce5c5c43a30adbc3730322934a10dbd.jpg"
-                        alt=""
-                      />
-                      <a class="teacherName" href="#">Floor Jansen</a>
-
-                      <p class="subject">Vocal</p>
-
-                      <p class="country">Denmark</p>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <img
-                        src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
-                        alt=""
-                      />
-                      <a class="teacherName" href="#">Ihor Tkachuk</a>
-
-                      <p class="subject">Chemistry</p>
-
-                      <p class="country">Ukraine</p>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <img
-                        src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
-                        alt=""
-                      />
-                      <a class="teacherName" href="#">Ihor Tkachuk</a>
-
-                      <p class="subject">Chemistry</p>
-
-                      <p class="country">Ukraine</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <div class="row row-cols-lg-5">
-                  <div class="col">
-                    <div class="card">
-                      <img
-                        src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
-                        alt=""
-                      />
-                      <a class="teacherName" href="#">Ihor Tkachuk</a>
-
-                      <p class="subject">Chemistry</p>
-
-                      <p class="country">Ukraine</p>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <img
-                        src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/27/08/jennifer-lawrence.jpg"
-                        alt=""
-                      />
-                      <a class="teacherName" href="#">Pregg Rameshba</a>
-
-                      <p class="subject">Chess</p>
-
-                      <p class="country">India</p>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <img
-                        src="https://i.pinimg.com/564x/4c/e5/c5/4ce5c5c43a30adbc3730322934a10dbd.jpg"
-                        alt=""
-                      />
-                      <a class="teacherName" href="#">Floor Jansen</a>
-
-                      <p class="subject">Vocal</p>
-
-                      <p class="country">Denmark</p>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <img
-                        src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
-                        alt=""
-                      />
-                      <a class="teacherName" href="#">Ihor Tkachuk</a>
-
-                      <p class="subject">Chemistry</p>
-
-                      <p class="country">Ukraine</p>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <img
-                        src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
-                        alt=""
-                      />
-                      <a class="teacherName" href="#">Ihor Tkachuk</a>
-
-                      <p class="subject">Chemistry</p>
-
-                      <p class="country">Ukraine</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          <div class="lol">
+            <div class="row row-cols-lg-5" id="lolRow"></div>
           </div>
         </div>
       </div>
@@ -540,37 +266,56 @@
       </div>
     </div>
 
-    <div class="teacherInfoBack">
-      <div class="teacherInfoPopUp">
-        <div class="headerOfModal">
-          <h4>Teacher Info</h4>
-          <button class="closePopUpTeacherInfoBtn">X</button>
+    <div
+      class="modal fade"
+      id="infoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="infoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="infoModalLabel">Teacher Info</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img id="modalImg" src="" alt="" />
+            <h5 id="modalName"></h5>
+            <p id="modalSubject"></p>
+            <p id="modalGender"></p>
+            <p id="modalCountry"></p>
+            <p id="modalContinent"></p>
+            <p id="modalAge"></p>
+            <p id="modalEmail"></p>
+            <p id="modalTel"></p>
+            <p id="modalParagraph"></p>
+          </div>
         </div>
-        <img
-          class="imgInCard"
-          src="https://www.factroom.ru/wp-content/uploads/2017/08/Depositphotos_24423177_l-2015-730x511.jpg"
-          alt=""
-        />
-        <h5 class="teacherNameCard">Ihor Tkachuk</h5>
-
-        <p class="subjectCard">Chemistry</p>
-
-        <p class="countryCard">Ukraine</p>
-
-        <p class="ageAndSexCard">35, Male</p>
-
-        <a class="mailCard" href="#">ihor_tkachuk@domain.com</a>
-
-        <p class="telephoneCard">35252412334</p>
-
-        <p class="paragraphCard">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, odio.
-          Beatae, alias. Asperiores officiis ex odio non consequuntur suscipit,
-          id nulla veritatis temporibus ipsa corrupti. Doloremque nostrum
-          voluptatum pariatur? Est!
-        </p>
       </div>
     </div>
-    <script src="app.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="slider.js"></script>
+    <script src="AddPopUp/addPopUp.js"></script>
+    <script src="InfoPopUp/infoPopUp.js"></script>
+    <script src="table.js"></script>
+    <script src="test.js"></script>
   </body>
 </html>

@@ -218,50 +218,39 @@ header .headerContent .rightSide button:hover {
 .topTeachersBlock .topTeachersBlockContent .blockOfCards .row {
   visibility: visible;
 }
-.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .col {
-  margin-bottom: 50px;
+.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .card {
+  width: 200px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .col .card {
-  width: 150px;
-  height: 290px;
+  align-items: center;
+  margin-bottom: 50px;
   border: 0;
 }
-.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .col .card img {
-  border-radius: 100%;
-  width: 150px;
-  min-height: 150px;
-  border: 2px solid #f99589;
+.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .card img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
 }
-.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .col .card .teacherName {
+.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .card .addToFavBtn {
+  border: 0.1px solid rgb(117, 115, 115);
+  background-color: white;
   color: black;
-  font-size: 26px;
-  text-align: center;
-  font-weight: 600;
-  text-decoration: none;
-  line-height: 28px;
-  width: 130px;
-  margin-left: calc(50% - 65px);
+  margin-right: 5px;
+  margin-bottom: 3px;
 }
-.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .col .card .subject {
-  color: #58584e;
-  font-size: 15px;
-  text-align: center;
-  margin-top: 20px;
+.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .card .addToFavBtn:disabled {
+  opacity: 0.2;
 }
-.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .col .card .country {
+.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .card .infoButton {
+  border: 0.1px solid rgb(117, 115, 115);
+  background-color: white;
   color: black;
-  font-size: 10px;
-  text-align: center;
+  margin-left: 5px;
+  margin-bottom: 3px;
 }
-.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .col .card:hover img {
-  width: 150px;
-  height: 290px;
-  border-radius: 100%;
-  width: 150px;
-  min-height: 150px;
-  border: 2px solid rgb(247, 84, 84);
+.topTeachersBlock .topTeachersBlockContent .blockOfCards .row .card .infoButton:disabled {
+  opacity: 0.2;
 }
 
 @media (max-width: 1000px) {
@@ -292,6 +281,7 @@ header .headerContent .rightSide button:hover {
   }
   .topTeachersBlock .topTeachersBlockContent .blockOfCards {
     width: 100%;
+    border: 1px solid black;
   }
 }
 .statisticsBlock {
@@ -320,20 +310,20 @@ header .headerContent .rightSide button:hover {
   width: 140px;
   margin-left: calc(50% - 70px);
 }
-.statisticsBlock .statisticsBlockContnet table {
+.statisticsBlock .statisticsBlockContnet #tableOfStats {
   margin-top: 40px;
   width: 1000px;
+  border: 1;
 }
-.statisticsBlock .statisticsBlockContnet table,
+.statisticsBlock .statisticsBlockContnet #tableOfStats,
 .statisticsBlock .statisticsBlockContnet th,
 .statisticsBlock .statisticsBlockContnet td {
   height: 35px;
+  border: 1px solid rgb(198, 196, 196);
 }
-.statisticsBlock .statisticsBlockContnet #dksfnjsdnfj {
-  background-color: #f9f5f9;
-}
-.statisticsBlock .statisticsBlockContnet #rnwjernejr {
-  border-bottom: 2px solid black;
+.statisticsBlock .statisticsBlockContnet th {
+  background-color: rgb(82, 160, 160);
+  cursor: pointer;
 }
 
 @media (max-width: 1000px) {
@@ -359,152 +349,74 @@ header .headerContent .rightSide button:hover {
     width: 100%;
   }
 }
-.carouselBlock {
+.sliderBlock {
   width: 100%;
-  height: 470px;
+  min-height: 470px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.carouselBlock .carouselBlockContent {
-  width: 1200px;
-  height: 470px;
+.sliderBlock .sliderBlockContainer {
+  width: 1000px;
+  min-height: 470px;
+  position: relative;
 }
-.carouselBlock .carouselBlockContent .horizontalLine {
+.sliderBlock .sliderBlockContainer .horizontalLine {
+  position: absolute;
   height: 1px;
   width: 500px;
   background-color: black;
-  margin-top: 50px;
-  margin-left: calc(50% - 250px);
+  top: 100px;
+  left: calc(50% - 250px);
 }
-.carouselBlock .carouselBlockContent h2 {
+.sliderBlock .sliderBlockContainer h2 {
   font-size: 34px;
   margin-top: 40px;
   font-weight: bold;
-  width: 142px;
-  margin-left: calc(50% - 71px);
+  width: 140px;
+  margin-left: calc(50% - 70px);
 }
-.carouselBlock .carouselBlockContent .carousel {
-  margin-top: 40px;
-  width: 1200px;
+.sliderBlock .sliderBlockContainer .lol {
+  margin-top: 50px;
+  width: 100%;
 }
-.carouselBlock .carouselBlockContent .carousel .carousel-item {
-  width: 950px;
-  margin-left: calc(50% - 475px);
-}
-.carouselBlock .carouselBlockContent .carousel .carousel-item .row {
-  visibility: visible;
-}
-.carouselBlock .carouselBlockContent .carousel .carousel-item .row .card {
-  width: 150px;
-  height: 290px;
+.sliderBlock .sliderBlockContainer .lol .card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
   border: 0;
 }
-.carouselBlock .carouselBlockContent .carousel .carousel-item .row .card img {
-  border-radius: 100%;
-  width: 150px;
-  min-height: 150px;
-  border: 2px solid #f99589;
+.sliderBlock .sliderBlockContainer .lol .card img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
 }
-.carouselBlock .carouselBlockContent .carousel .carousel-item .row .card .teacherName {
+.sliderBlock .sliderBlockContainer .lol .card .addToFavBtn {
+  border: 0.1px solid rgb(117, 115, 115);
+  background-color: white;
   color: black;
-  font-size: 26px;
-  text-align: center;
-  font-weight: 600;
-  text-decoration: none;
-  line-height: 28px;
-  width: 130px;
-  margin-left: calc(50% - 65px);
+  margin-right: 5px;
+  margin-bottom: 3px;
+  display: none;
 }
-.carouselBlock .carouselBlockContent .carousel .carousel-item .row .card .subject {
-  color: #58584e;
-  font-size: 15px;
-  text-align: center;
-  margin-top: 20px;
+.sliderBlock .sliderBlockContainer .lol .card .addToFavBtn:disabled {
+  opacity: 0.2;
 }
-.carouselBlock .carouselBlockContent .carousel .carousel-item .row .card .country {
+.sliderBlock .sliderBlockContainer .lol .card .infoButton {
+  border: 0.1px solid rgb(117, 115, 115);
+  background-color: white;
   color: black;
-  font-size: 10px;
-  text-align: center;
+  margin-left: 5px;
+  margin-bottom: 3px;
+  display: none;
 }
-.carouselBlock .carouselBlockContent .carousel .carousel-item .row .card:hover img {
-  width: 150px;
-  height: 290px;
-  border-radius: 100%;
-  width: 150px;
-  min-height: 150px;
-  border: 2px solid rgb(247, 84, 84);
-}
-.carouselBlock .carouselBlockContent .carousel .carousel-item .carousel-control-prev {
-  background-color: #0e0e0d;
-  color: black;
-}
-.carouselBlock .carouselBlockContent .carousel .carousel-item .carousel-control-prev span.carousel-control-prev-icon {
-  background-color: #0e0e0d;
-  color: black;
+.sliderBlock .sliderBlockContainer .lol .card .infoButton:disabled {
+  opacity: 0.2;
 }
 
-@media (max-width: 1000px) {
-  .carouselBlock {
-    width: 100%;
-    display: none;
-  }
-  .carouselBlock .carouselBlockContent {
-    width: 100%;
-  }
-  .carouselBlock .carouselBlockContent .horizontalLine {
-    width: 380px;
-    margin-left: calc(50% - 190px);
-  }
-  .carouselBlock .carouselBlockContent h2 {
-    font-size: 30px;
-    margin-top: 40px;
-    font-weight: bold;
-    width: 185px;
-    margin-left: calc(50% - 92.5px);
-  }
-  .carouselBlock .carouselBlockContent .carousel {
-    width: 380px;
-  }
-  .carouselBlock .carouselBlockContent .carousel .carousel-item {
-    width: 380px;
-    margin-left: calc(50% - 190px);
-  }
-  .carouselBlock .carouselBlockContent .carousel .carousel-item .row {
-    visibility: visible;
-  }
-  .carouselBlock .carouselBlockContent .carousel .carousel-item .row .card {
-    width: 70px;
-    height: 100px;
-    border: 0;
-  }
-  .carouselBlock .carouselBlockContent .carousel .carousel-item .row .card img {
-    border-radius: 100%;
-    width: 70px;
-    min-height: 100px;
-    border: 2px solid #f99589;
-  }
-  .carouselBlock .carouselBlockContent .carousel .carousel-item .row .card .teacherName {
-    color: black;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 600;
-    text-decoration: none;
-    line-height: 28px;
-    margin: auto;
-  }
-  .carouselBlock .carouselBlockContent .carousel .carousel-item .row .card .subject {
-    color: #58584e;
-    font-size: 15px;
-    text-align: center;
-    margin-top: 20px;
-  }
-  .carouselBlock .carouselBlockContent .carousel .carousel-item .row .card .country {
-    color: black;
-    font-size: 10px;
-    text-align: center;
-  }
-}
 .blockUnderCarousel {
   width: 100%;
   min-height: 290px;
@@ -541,4 +453,11 @@ header .headerContent .rightSide button:hover {
     width: 380px;
     margin-left: calc(50% - 190px);
   }
+}
+.modal-body {
+  visibility: visible;
+}
+.modal-body #modalImg {
+  width: 100px;
+  height: 100px;
 }/*# sourceMappingURL=style.css.map */
