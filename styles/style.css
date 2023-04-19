@@ -4,10 +4,11 @@
 
 header {
   width: 100%;
-  height: 130px;
+  height: 230px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 header .headerContent {
   width: 1000px;
@@ -45,6 +46,70 @@ header .headerContent .rightSide button:hover {
   background: rgb(247, 84, 84);
   color: white;
 }
+header .blockUnderHeader {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+header .blockUnderHeader .blockUnderHeaderContent {
+  width: 1000px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .blockUnderHeader .blockUnderHeaderContent .leftSide {
+  width: 465px;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .blockUnderHeader .blockUnderHeaderContent .leftSide a {
+  text-decoration: none;
+  color: red;
+  font-size: 24px;
+}
+header .blockUnderHeader .blockUnderHeaderContent button {
+  width: 170px;
+  height: 50px;
+  border: 0.3px solid black;
+  background: white;
+}
+header .blockUnderHeader .blockUnderHeaderContent button:hover {
+  width: 170px;
+  height: 50px;
+  transition: 0.4s;
+  border: 0.3px solid black;
+  background: rgb(247, 84, 84);
+  color: white;
+}
+@media (max-width: 1000px) {
+  header .blockUnderHeader {
+    width: 100%;
+  }
+  header .blockUnderHeader .blockUnderHeaderContent {
+    width: 100%;
+  }
+  header .blockUnderHeader .blockUnderHeaderContent .leftSide {
+    width: 465px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding-left: 20px;
+  }
+  header .blockUnderHeader .blockUnderHeaderContent .leftSide a {
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+  }
+}
 
 @media (max-width: 1000px) {
   header {
@@ -78,71 +143,6 @@ header .headerContent .rightSide button:hover {
     height: 40px;
     border: 0.3px solid black;
     background: white;
-  }
-}
-.blockUnderHeader {
-  width: 100%;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.blockUnderHeader .blockUnderHeaderContent {
-  width: 1000px;
-  height: 120px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.blockUnderHeader .blockUnderHeaderContent .leftSide {
-  width: 465px;
-  height: 120px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.blockUnderHeader .blockUnderHeaderContent .leftSide a {
-  text-decoration: none;
-  color: red;
-  font-size: 24px;
-}
-.blockUnderHeader .blockUnderHeaderContent button {
-  width: 170px;
-  height: 50px;
-  border: 0.3px solid black;
-  background: white;
-}
-.blockUnderHeader .blockUnderHeaderContent button:hover {
-  width: 170px;
-  height: 50px;
-  transition: 0.4s;
-  border: 0.3px solid black;
-  background: rgb(247, 84, 84);
-  color: white;
-}
-
-@media (max-width: 1000px) {
-  .blockUnderHeader {
-    width: 100%;
-  }
-  .blockUnderHeader .blockUnderHeaderContent {
-    width: 100%;
-  }
-  .blockUnderHeader .blockUnderHeaderContent .leftSide {
-    width: 465px;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    padding-left: 20px;
-  }
-  .blockUnderHeader .blockUnderHeaderContent .leftSide a {
-    text-decoration: none;
-    color: red;
-    font-size: 20px;
   }
 }
 .topTeachersBlock {
@@ -188,6 +188,26 @@ header .headerContent .rightSide button:hover {
   align-items: center;
   height: 40px;
 }
+.topTeachersBlock .topTeachersBlockContent .form .region button,
+.topTeachersBlock .topTeachersBlockContent .form .sex button {
+  background-color: white;
+  color: black;
+  border: 0.1px solid rgb(117, 115, 115);
+}
+.topTeachersBlock .topTeachersBlockContent .form .region input,
+.topTeachersBlock .topTeachersBlockContent .form .sex input {
+  width: 100%;
+  background-color: white;
+  color: black;
+  border: 0;
+}
+.topTeachersBlock .topTeachersBlockContent .form .region input:hover,
+.topTeachersBlock .topTeachersBlockContent .form .sex input:hover {
+  width: 100%;
+  background-color: rgb(220, 212, 212);
+  color: black;
+  border: 0;
+}
 .topTeachersBlock .topTeachersBlockContent .form .age {
   width: 130px;
   height: 40px;
@@ -195,6 +215,23 @@ header .headerContent .rightSide button:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.topTeachersBlock .topTeachersBlockContent .form .age button {
+  background-color: white;
+  color: black;
+  border: 0.1px solid rgb(117, 115, 115);
+}
+.topTeachersBlock .topTeachersBlockContent .form .age input {
+  width: 100%;
+  background-color: white;
+  color: black;
+  border: 0;
+}
+.topTeachersBlock .topTeachersBlockContent .form .age input:hover {
+  width: 100%;
+  background-color: rgb(220, 212, 212);
+  color: black;
+  border: 0;
 }
 .topTeachersBlock .topTeachersBlockContent .form .preLastCheckboxBlock {
   width: 150px;
@@ -347,6 +384,7 @@ header .headerContent .rightSide button:hover {
   .statisticsBlock .statisticsBlockContnet table {
     margin-top: 40px;
     width: 100%;
+    width: 390px;
   }
 }
 .sliderBlock {
@@ -415,6 +453,49 @@ header .headerContent .rightSide button:hover {
 }
 .sliderBlock .sliderBlockContainer .lol .card .infoButton:disabled {
   opacity: 0.2;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+}
+footer .container {
+  width: 1000px;
+}
+footer .container .blockUnderHeader {
+  width: 100%;
+}
+footer .container .blockUnderHeader .blockUnderHeaderContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .blockUnderHeader .blockUnderHeaderContent .leftSide {
+  width: 465px;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .blockUnderHeader .blockUnderHeaderContent .leftSide a {
+  text-decoration: none;
+  color: red;
+  font-size: 24px;
+}
+footer .container .blockUnderHeader .blockUnderHeaderContent button {
+  width: 170px;
+  height: 50px;
+  border: 0.3px solid black;
+  background: white;
+}
+footer .container .blockUnderHeader .blockUnderHeaderContent button:hover {
+  width: 170px;
+  height: 50px;
+  transition: 0.4s;
+  border: 0.3px solid black;
+  background: rgb(247, 84, 84);
+  color: white;
 }
 
 .blockUnderCarousel {
